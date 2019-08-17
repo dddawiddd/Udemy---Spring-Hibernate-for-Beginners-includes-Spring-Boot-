@@ -27,6 +27,12 @@
 
 	<div id="content">
 
+		<!-- put button: Add customer -->
+<input type="button" value="Add Customer"
+			onclick="window.location.href='showFormForAdd'; return false;"
+			class="add-button"/>
+
+
 		<!--  add our html table here -->
 
 		<table>
@@ -51,8 +57,7 @@
 
 	</div>
 
-</div>
-
+  </div>
 
 </body>
 
