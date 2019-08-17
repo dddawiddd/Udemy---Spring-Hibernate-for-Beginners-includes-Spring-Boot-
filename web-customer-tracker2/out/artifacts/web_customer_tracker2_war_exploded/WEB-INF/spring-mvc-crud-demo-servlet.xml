@@ -27,11 +27,13 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
-    <!-- Step 1: Define Database DataSource / connection pool -->
+    <!-- Step 1: Define Database DataSource / connection pool
+     tell us how to connect to the database
+     -->
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
-        <property name="driverClass" value="com.mysql.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false" />
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false&amp;serverTimezone=UTC" />
         <property name="user" value="springstudent" />
         <property name="password" value="springstudent" /> 
 
