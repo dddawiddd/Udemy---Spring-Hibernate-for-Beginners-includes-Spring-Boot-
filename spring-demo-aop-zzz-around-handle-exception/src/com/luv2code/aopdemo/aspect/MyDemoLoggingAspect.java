@@ -37,6 +37,7 @@ public class MyDemoLoggingAspect {
         } catch (Exception e) {
             //log the exception
             myLogger.warning(e.getMessage());
+            //System.out.println(e.getMessage());
 
 /*            //give user a custom message
             result = "Major accident! But no worries, your private helicopter is on the way!";*/

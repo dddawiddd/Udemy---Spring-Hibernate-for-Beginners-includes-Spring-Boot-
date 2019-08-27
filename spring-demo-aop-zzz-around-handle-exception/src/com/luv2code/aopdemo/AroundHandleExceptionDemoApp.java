@@ -22,12 +22,12 @@ public class AroundHandleExceptionDemoApp {
 
         myLogger.info("Calling getFortune");
 
+
         boolean tripWire = true;
         String data = theFortuneService.getFortune(tripWire);
 
+
         myLogger.info("\nMy fortune is: " + data);
-
-
         myLogger.info("Finished");
 
         //close the context
